@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-black {
+    color: #020307 !important;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #020307;
+    color: #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #020307;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: #ff2c1f;
+    border-radius: 5rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #ff2c1f;
+    }
+  }
+  #navbar {
+    a {
+      position: relative;
+      &.active {
+        border-bottom: 3px solid #ff2c1f;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 3px;
+        background: #ff2c1f;
+        transition: 0.4s all linear;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  .box {
+    .box-img {
+      height: 270px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s all linear;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
+
+    h3 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #ff2c1f;
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+  .footerLink {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.4s all linear;
+    border: 2px solid #ff2c1f;
+
+    i {
+      color: #ff2c1f;
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: #ff2c1f;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
