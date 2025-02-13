@@ -63,6 +63,11 @@
       }
     }
   }
+  #home {
+    background-image: url("../img/home3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
   .box {
     .box-img {
       height: 270px;

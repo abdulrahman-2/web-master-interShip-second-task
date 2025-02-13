@@ -618,6 +618,12 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
+#home {
+  background-image: url("../img/home3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .box {
   .box-img {
     height: 270px;
@@ -848,12 +854,6 @@ html::-webkit-scrollbar-thumb {
   gap: 1.5rem;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -875,26 +875,6 @@ html::-webkit-scrollbar-thumb {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[url\(\'img\/home3\.jpg\'\)\] {
-  background-image: url('img/home3.jpg');
-}
-
-.bg-\[url\(\'\.\/img\/home3\.jpg\'\)\] {
-  background-image: url('./img/home3.jpg');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'img\/home\.jpg\'\)\] {
-  background-image: url('img/home.jpg');
-}
-
-.bg-\[url\(\'\/img\/home3\.jpg\'\)\] {
-  background-image: url('/img/home3.jpg');
 }
 
 .bg-\[cover\] {
